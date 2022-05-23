@@ -1,0 +1,134 @@
+  /********************** SECTION - WELCOME PAGE **********************/
+  
+  /* welcomePage-background */
+  
+  .welcomePage {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .welcomePage-background {
+    width: 100%;
+    height: 90vh;
+    background-size: cover;
+    background-image: url(./img/background_welcome_transparent.png);
+  }
+  
+  .welcomePage-background .fa-solid {
+    position: absolute;
+    font-size: 40px;
+    filter: drop-shadow(1px 1px 1px #999);
+  }
+  
+  .fa-hippo {
+    top: 60%;
+    left: 35%;
+    transform: rotate(-10deg);
+    color: #fff;
+  }
+  
+  .fa-moon1 {
+    top: 5%;
+    left: 90%;
+    color: #fff;
+  }
+  
+  .fa-moon2 {
+    top: 60%;
+    left: 5%;
+    color: var(--blue-color);
+  }
+  
+  .fa-horse1 {
+    top: 10%;
+    left: 5%;
+    transform: rotate(10deg);
+    color: var(--pink-color);
+  }
+  
+  .fa-horse2 {
+    top: 60%;
+    left: 90%;
+    transform: rotate(-10deg);
+    color: var(--pink-color);
+  }
+  
+  .fa-cloud1 {
+    left: 40%;
+    color: #fff;
+  }
+  
+  .fa-cloud2 {
+    top: 70%;
+    left: 60%;
+    color: var(--blue-color);
+  }
+  
+  
+  /* welcomePage-info */
+  
+  .welcomePage-info {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    position: absolute;
+    top: 10%;
+  }
+  
+  .welcomePage-text {
+    width: 33%;
+    position: relative;
+    top: 5%;
+  }
+  
+  .welcomePage-text h1 {
+    font-size: 40px;
+    font-weight: 900;
+    color: var(--blue-color);
+    line-height: 1.2;
+    font-family: var(--font-title);
+  }
+  
+  .welcomePage-text p {
+    font-size: 18px;
+    color: var(--blue-color);
+    margin-top: 15px;
+  }
+  
+  .welcomePage-img {
+    position: relative;
+    right: 5%;
+  }
+  
+  .welcomePage-img-circle {
+    display: flex;
+    width: 350px;
+    height: 350px;
+    background: var(--pink-color);
+    position: relative;
+    border-radius: 70% 30% 30% 70% / 60% 40% 60% 40%;
+    filter: drop-shadow(1px 1px 1px #999);
+  }
+  
+  .welcomePage-img-circle-1 {
+    height: 110%;
+    position: relative;
+    bottom: 15%;
+    right: 5%;
+    transform: rotate(-15deg);
+    z-index: 5;
+    filter: drop-shadow(1px 1px 3px #fff);
+  }
+  
+  .welcomePage-img-circle-2 {
+    height: 100%;
+    position: relative;
+    bottom: 5%;
+    right: 25%;
+    transform: rotate(15deg);
+    z-index: 4;
+    filter: drop-shadow(1px 1px 3px #fff);
+  }

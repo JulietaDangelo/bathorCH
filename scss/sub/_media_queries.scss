@@ -1,0 +1,1884 @@
+  /* ============================================================================================
+  MEDIA QUERIES 
+  ============================================================================================ */
+  
+  /**********   MENU HAMBURGUESA  **********/
+
+  @media (max-width: 767px) {
+  
+    /* MENU HAMBURGUESA */
+    .hamburguer{
+      display: block;
+      position: relative;
+      right: 8%;
+    }
+  
+    .hamburguer.active .bar:nth-child(2){
+      opacity: 0;
+    }
+  
+    .hamburguer.active .bar:nth-child(1){
+      transform: translateY(8px) rotate(45deg);
+    }
+  
+    .hamburguer.active .bar:nth-child(3){
+      transform: translateY(-8px) rotate(-45deg);
+    }
+  
+    .nav-menu{
+      position: fixed;
+      left: -100%;
+      top: 70px;
+      gap: 0px;
+      flex-direction: column;
+      background-color: #fff;
+      width: 100%;
+      text-align: center;
+      transition: .3s;
+      box-shadow: -1px -1px 3px #000;
+    }
+  
+    .nav-item{
+      padding: 10px 100%;
+      text-align: center;
+      height: 100%;
+      transition: .3s;
+    }
+  
+    .nav-item:hover {
+      background-color: rgba(255, 192, 203, 0.2);
+    }
+  
+    .nav-item a{
+      font-size: 21px;
+    }
+  
+    .nav-menu.active{
+      left: 0;
+    }
+  }
+  
+  /**********   1024px - 1200px   **********/
+  
+  @media (min-width: 1024px) and (max-width: 1200px) {
+  
+    /********************** NAV BAR **********************/
+  
+    .nav-branding-logo {
+      width: 20%;
+      padding-top: 0px;
+    }
+  
+    /********************** SECTION - CART **********************/
+  
+    .cart-container {
+      width: 35%;
+      left: 63%;
+      overflow-y: scroll;
+      overflow-x: hidden;
+    }
+  
+    /* Scrollbar */
+    ::-webkit-scrollbar {
+      width: 10px;
+    }
+    
+    .cart-price {
+      display: inline-block;
+      font-weight: 900;
+      font-size: 20px;
+    }
+  
+    .cart-buy-button {
+      width: 320px;
+    }
+  
+  
+    /********************** SECTION - WELCOME PAGE **********************/
+  
+    /* welcomePage-background */
+  
+    .fa-hippo {
+      left: 40%;
+    }
+  
+    .fa-cloud1 {
+      left: 30%;
+      color: #fff;
+    }
+  
+    .fa-cloud2 {
+      top: 70%;
+    }
+  
+  
+    /* welcomePage-info */
+  
+    .welcomePage-text {
+      width: 40%;
+      top: 10%;
+    }
+  
+    .welcomePage-text h1 {
+      font-size: 37px;
+    }
+  
+    .welcomePage-text p {
+      font-size: 20px;
+    }
+  
+  
+    /********************** SECTION - INFO **********************/
+  
+    .info {
+      width: 80%;
+    }
+  
+    .info-container-background--yellow {
+      left: 3%;
+      bottom: 50%;
+      transform: rotate(-10deg);
+    }
+  
+    .info-container-background--bluelight {
+      right: 3%;
+      bottom: 50%;
+      transform: rotate(10deg);
+    }
+  
+    .info-container-items .fa-solid {
+      font-size: 32px;
+    }
+  
+    .info-container-items-title {
+      font-size: 21px;
+    }
+  
+    .info-container-items-text {
+      color: #fff;
+      width: 85%;
+      font-size: 16px;
+    }
+  
+  
+    /********************** SECTION - US **********************/
+  
+    .us {
+      margin: 0 8%;
+    }
+  
+    .us-info {
+      justify-content: space-between;
+    }
+  
+    /********************** SECTION - SHOP **********************/
+  
+    .shop {
+      padding: 30px;
+    }
+  
+    .shop h2 {
+      font-size: 50px;
+    }
+  
+    .shop-items {
+      grid-row-gap: 60px;
+      grid-column-gap: 60px;
+      margin: 0px;
+    }
+  
+  
+    /********************** SECTION - CONTACT **********************/
+  
+    .contact {
+      right: 5%;
+    }
+  
+    .form-images-img {
+      height: 70%;
+      left: 68%;
+      transform: rotate(30deg);
+    }
+  
+  
+    /********************** SECTION - FOOTER **********************/
+  
+    .footer-logo {
+      width: 22%;
+      margin-top: 30px;
+    }
+  
+    .footer-info-instagram {
+      font-size: 50px;
+    }
+  
+    .footer-info-text-location, .footer-info-text-copyright {
+      font-size: 20px;
+    }
+  }
+  
+  
+  
+  
+  /**********   900px - 1023px   **********/
+  
+  
+  
+  
+  @media (min-width: 900px) and (max-width: 1023px) {
+  
+      /********************** NAV BAR **********************/
+  
+      .nav-branding-logo {
+        width: 22%;
+        padding-top: 0px;
+      }
+  
+      .nav-menu {
+        gap: 50px;
+      }
+  
+      /********************** SECTION - CART **********************/
+       
+      .cart-icon {
+        left: 93%;
+      }
+  
+      .cart-container {
+        width: 35%;
+        top: 10%;
+        left: 62%;
+        overflow-y: scroll;
+        overflow-x: hidden;
+      }
+    
+      /* Scrollbar */
+      ::-webkit-scrollbar {
+        width: 10px;
+      }
+    
+      .cart-buy-button {
+        width: 280px;
+      }
+    
+    
+      /********************** SECTION - WELCOME PAGE **********************/
+    
+      /* welcomePage-background */
+    
+      .fa-hippo {
+        left: 40%;
+      }
+    
+      .fa-cloud1 {
+        top: 5%;
+        left: 30%;
+        color: #fff;
+      }
+  
+      .fa-moon2 {
+        top: 65%;
+      }  
+    
+      /* welcomePage-info */
+    
+      .welcomePage-text {
+        width: 42%;
+        top: 10%;
+      }
+    
+      .welcomePage-text h1 {
+        font-size: 34px;
+      }
+    
+      .welcomePage-text p {
+        font-size: 19px;
+      }
+    
+      .welcomePage-img {
+        position: relative;
+        right: 2%;
+      }
+      
+      .welcomePage-img-circle {
+        width: 310px;
+        height: 310px;
+      }
+      
+      .welcomePage-img-circle-1 {
+        height: 100%;
+        bottom: 5%;
+        right: 5%;
+      }
+      
+      .welcomePage-img-circle-2 {
+        height: 95%;
+        bottom: 0%;
+        right: 25%;
+      }
+      
+    
+      /********************** SECTION - INFO **********************/
+    
+      .info {
+        width: 80%;
+      }
+    
+      .info-container-background--yellow {
+        bottom: 50%;
+        height: 250px;
+        transform: rotate(-10deg);
+      }
+    
+      .info-container-background--bluelight {
+        bottom: 50%;
+        height: 250px;
+        transform: rotate(10deg);
+      }
+    
+      .info-container-items .fa-solid {
+        font-size: 30px;
+      }
+    
+      .info-container-items-title {
+        font-size: 18px;
+      }
+    
+      .info-container-items-text {
+        color: #fff;
+        width: 90%;
+        font-size: 15px;
+      }
+    
+    
+      /********************** SECTION - US **********************/
+    
+      .us {
+        margin: 0 8%;
+      }
+    
+      .us-info {
+        justify-content: space-between;
+      }
+  
+      .us-img-circle {
+        width: 350px;
+        height: 350px;
+      }
+      
+      .us-img-circle-background {
+        width: 370px;
+        height: 370px;
+      }
+      
+      .us-text {
+        width: 55%;
+        height: 40vh;
+        margin-top: 5px;
+      }
+      
+      .us-text h2 {
+        font-size: 35px;
+      }
+      
+      .us-text p {
+        font-size: 16px;
+      }
+  
+      .us-text-button-cats {
+        width: 160px;
+        height: 40px;
+      }
+      
+      .us-text-button {
+        width: 160px;
+        height: 40px;
+      }
+      
+      .us-background-circle--yellow {
+        width: 250px;
+        height: 250px;
+      }
+    
+      /********************** SECTION - SHOP **********************/
+    
+      .shop {
+        padding: 20px;
+      }
+    
+      .shop h2 {
+        font-size: 45px;
+      }
+    
+      .shop-items {
+        grid-row-gap: 40px;
+        grid-column-gap: 40px;
+        margin: 0px;
+      }
+  
+      .shop-item-name {
+        font-size: 18px;
+      }
+  
+      .shop-item-img {
+        width: 60%;
+      }
+    
+    
+      /********************** SECTION - CONTACT **********************/
+    
+      .contact {
+        right: 5%;
+      }
+    
+      .form-images-img {
+        height: 70%;
+        left: 68%;
+        transform: rotate(30deg);
+      }
+    
+    
+      /********************** SECTION - FOOTER **********************/
+    
+      .footer-logo {
+        width: 22%;
+        margin-top: 30px;
+      }
+    
+      .footer-info-instagram {
+        font-size: 50px;
+      }
+    
+      .footer-info-text-location, .footer-info-text-copyright {
+        font-size: 18px;
+      }
+  
+  
+    /********************** SECTION - TOASTIFY **********************/
+  
+      .toastify-avatar {
+        width: 180px;
+        height: 180px;
+      }
+  }
+  
+  
+  
+  
+  /**********   768px - 899px   **********/
+  
+  
+  
+  
+  @media (min-width: 768px) and (max-width: 899px) {
+   
+    /********************** NAV BAR **********************/
+  
+    .nav-branding-logo {
+      width: 28%;
+      padding-top: 0px;
+    }
+  
+    .nav-menu {
+      gap: 30px;
+    }
+  
+    /********************** SECTION - CART **********************/
+     
+    .cart-icon {
+      left: 93%;
+    }
+  
+    .cart-container {
+      width: 35%;
+      top: 10%;
+      left: 62%;
+      overflow-y: scroll;
+      overflow-x: hidden;
+    }
+  
+    /* Scrollbar */
+    ::-webkit-scrollbar {
+      width: 10px;
+    }
+  
+    .cart-item-img {
+      width: 15%;
+    }
+  
+    .cart-item-name {
+      font-size: 14px;
+    }
+  
+    .cart-item-price {
+      font-size: 14px;
+    }
+  
+    .cart-item-quantity {
+      width: 30px;
+    }
+  
+    .cart-price-text {
+      display: inline-block;
+      font-weight: 900;
+      font-size: 15px;
+    }
+    
+    .cart-price {
+      font-size: 15px;
+    }
+  
+    .cart-buy-button {
+      width: 240px;
+      height: 30px;
+      font-size: 16px;  
+      margin-bottom: 20px;
+    }
+  
+  
+    /********************** SECTION - WELCOME PAGE **********************/
+  
+    /* welcomePage-background */
+  
+    .welcomePage-background .fa-solid {
+      font-size: 35px;
+    }
+  
+    .fa-hippo {
+      left: 40%;
+    }
+  
+    .fa-cloud1 {
+      top: 5%;
+      left: 30%;
+      color: #fff;
+    }
+  
+    .fa-moon2 {
+      top: 65%;
+    }  
+  
+    /* welcomePage-info */
+  
+    .welcomePage-text {
+      width: 45%;
+      top: 12%;
+    }
+  
+    .welcomePage-text h1 {
+      font-size: 30px;
+    }
+  
+    .welcomePage-text p {
+      font-size: 17px;
+    }
+  
+    .welcomePage-img {
+      position: relative;
+      right: 2%;
+    }
+    
+    .welcomePage-img-circle {
+      width: 270px;
+      height: 270px;
+    }
+    
+    .welcomePage-img-circle-1 {
+      height: 97%;
+      bottom: 5%;
+      right: 3%;
+    }
+    
+    .welcomePage-img-circle-2 {
+      height: 92%;
+      bottom: 0%;
+      right: 21%;
+    }
+    
+  
+    /********************** SECTION - INFO **********************/
+  
+    .info {
+      width: 84%;
+      height: 80vh;
+    }
+  
+    .info-container-background--yellow {
+      bottom: 40%;
+      height: 240px;
+      transform: rotate(-10deg);
+    }
+  
+    .info-container-background--bluelight {
+      bottom: 40%;
+      height: 240px;
+      transform: rotate(10deg);
+    }
+  
+    .info-container-items .fa-solid {
+      font-size: 25px;
+    }
+  
+    .info-container-items-title {
+      font-size: 17px;
+    }
+  
+    .info-container-items-text {
+      color: #fff;
+      width: 92%;
+      font-size: 14px;
+    }
+  
+  
+    /********************** SECTION - US **********************/
+  
+    .us {
+      margin: 0 8%;
+    }
+  
+    .us-info {
+      justify-content: space-between;
+    }
+  
+    .us-img-circle {
+      width: 300px;
+      height: 300px;
+    }
+    
+    .us-img-circle-background {
+      width: 320px;
+      height: 320px;
+    }
+    
+    .us-text {
+      width: 55%;
+      height: 40vh;
+      margin-top: 5px;
+    }
+    
+    .us-text h2 {
+      font-size: 30px;
+    }
+    
+    .us-text p {
+      font-size: 14px;
+    }
+  
+    .us-text-button-cats {
+      width: 150px;
+      height: 35px;
+      font-size: 15px;
+    }
+    
+    .us-text-button {
+      width: 150px;
+      height: 35px;
+      font-size: 15px;
+    }
+    
+    .us-background-circle--yellow {
+      width: 220px;
+      height: 220px;
+    }
+  
+    /********************** SECTION - SHOP **********************/
+  
+    .shop {
+      margin: 30px;
+      padding: 20px;
+    }
+  
+    .shop h2 {
+      font-size: 40px;
+    }
+  
+    .shop-items {
+      grid-row-gap: 40px;
+      grid-column-gap: 40px;
+      margin: 0px;
+    }
+  
+    .shop-item-name {
+      font-size: 17px;
+    }
+  
+    .shop-item-img {
+      width: 55%;
+    }
+  
+  
+    /********************** SECTION - CONTACT **********************/
+  
+    .contact {
+      right: 10%;
+    }
+  
+    .contact h3 {
+      font-size: 30px;
+    }
+  
+    .form-background {
+      width: 430px;
+      height: 450px;
+      border-radius: 30px;
+    }
+  
+    .form-container {
+      gap: 5px;
+    }
+  
+    .form-images-img {
+      height: 65%;
+      left: 70%;
+      transform: rotate(25deg);
+    }
+  
+  
+    /********************** SECTION - FOOTER **********************/
+  
+    footer {
+      margin-top: 0px;
+    }
+  
+    .footer-logo {
+      width: 22%;
+      margin-top: 30px;
+    }
+  
+    .footer-info-instagram {
+      font-size: 40px;
+    }
+  
+    .footer-info {
+      gap: 30px;
+    }
+  
+    .footer-info-text-location, .footer-info-text-copyright {
+      font-size: 15px;
+    }
+  
+      /********************** SECTION - TOASTIFY **********************/
+  
+      .toastify-avatar {
+        width: 150px;
+        height: 150px;
+      }
+  }
+  
+  
+  
+  
+  
+  /**********   600px - 767px   **********/
+  
+  
+  
+  
+  @media (min-width: 600px) and (max-width: 767px) {
+  
+    /********************** NAV BAR **********************/
+  
+    .nav-branding-logo {
+      width: 28%;
+      padding-top: 0px;
+    }
+  
+    /********************** SECTION - CART **********************/
+     
+    .cart-icon {
+      left: 90%;
+    }
+  
+    .cart-icon-container {
+      height: 45px;
+    }
+  
+    .cart-container {
+      width: 45%;
+      top: 13%;
+      left: 52%;
+      overflow-y: scroll;
+      overflow-x: hidden;
+    }
+    
+    .fa-cart-shopping {
+      font-size: 27px;
+    }
+  
+    .cart-icon-number {
+      font-size: 18px;
+    }
+  
+    /* Scrollbar */
+    ::-webkit-scrollbar {
+      width: 10px;
+    }
+  
+    .cart-item-img {
+      width: 15%;
+    }
+  
+    .cart-item-name {
+      font-size: 14px;
+    }
+  
+    .cart-item-price {
+      font-size: 14px;
+    }
+  
+    .cart-item-quantity {
+      width: 30px;
+    }
+  
+    .cart-price-text {
+      display: inline-block;
+      font-weight: 900;
+      font-size: 15px;
+    }
+    
+    .cart-price {
+      font-size: 15px;
+    }
+  
+    .cart-buy-button {
+      width: 240px;
+      height: 30px;
+      font-size: 16px;  
+      margin-bottom: 20px;
+    }
+  
+  
+    /********************** SECTION - WELCOME PAGE **********************/
+  
+    /* welcomePage-background */
+  
+    .welcomePage-background .fa-solid {
+      font-size: 30px;
+    }
+  
+    .fa-hippo {
+      left: 45%;
+    }
+  
+    .fa-horse2 {
+      top: 65%;
+    }
+  
+    .fa-cloud1 {
+      top: 5%;
+      left: 40%;
+      color: #fff;
+    }
+  
+    .fa-cloud2 {
+      top: 75%;
+      left: 65%;
+    }
+  
+    .fa-moon2 {
+      top: 70%;
+    }  
+  
+    /* welcomePage-info */
+  
+    .welcomePage-text {
+      width: 52%;
+      top: 16%;
+    }
+  
+    .welcomePage-text h1 {
+      font-size: 28px;
+    }
+  
+    .welcomePage-text p {
+      font-size: 16px;
+    }
+  
+    .welcomePage-img {
+      position: relative;
+      right: 2%;
+      top: 8%;
+    }
+    
+    .welcomePage-img-circle {
+      width: 240px;
+      height: 240px;
+    }
+    
+    .welcomePage-img-circle-1 {
+      height: 95%;
+      bottom: 0%;
+      right: -2%;
+    }
+    
+    .welcomePage-img-circle-2 {
+      height: 90%;
+      bottom: -2%;
+      right: 18%;
+    }
+    
+  
+    /********************** SECTION - INFO **********************/
+  
+    .info {
+      width: 84%;
+      height: 80vh;
+    }
+  
+    .info-container-background--yellow {
+      bottom: 47%;
+      height: 230px;
+      transform: rotate(-10deg);
+    }
+  
+    .info-container-background--bluelight {
+      bottom: 47%;
+      height: 230px;
+      transform: rotate(10deg);
+    }
+  
+    .info-container-items .fa-solid {
+      font-size: 25px;
+    }
+  
+    .info-container-items-title {
+      font-size: 14px;
+    }
+  
+    .info-container-items-text {
+      color: #fff;
+      width: 92%;
+      font-size: 11px;
+    }
+  
+  
+    /********************** SECTION - US **********************/
+  
+    .us {
+      margin: 0 8%;
+      height: 60vh;
+    }
+  
+    .us-info {
+      justify-content: space-between;
+    }
+  
+    .us-img-circle {
+      width: 240px;
+      height: 240px;
+    }
+    
+    .us-img-circle-background {
+      width: 250px;
+      height: 250px;
+    }
+    
+    .us-text {
+      width: 55%;
+      height: 40vh;
+      margin-top: 0px;
+    }
+    
+    .us-text h2 {
+      font-size: 25px;
+    }
+    
+    .us-text p {
+      font-size: 12px;
+    }
+  
+    .us-text-button-cats {
+      width: 125px;
+      height: 30px;
+      font-size: 12px;
+      margin-top: 10px;
+      margin-right: 0px;
+    }
+    
+    .us-text-button {
+      width: 125px;
+      height: 30px;
+      font-size: 12px;
+      margin-top: 10px;
+    }
+    
+    .us-background-circle--yellow {
+      width: 190px;
+      height: 190px;
+    }
+  
+    /********************** SECTION - SHOP **********************/
+  
+    .shop {
+      margin: 30px;
+      padding: 40px;
+    }
+  
+    .shop h2 {
+      font-size: 35px;
+    }
+  
+    .shop-items {
+      grid-template-columns: repeat(2, 1fr);
+      grid-row-gap: 50px;
+      grid-column-gap: 70px;
+      margin: 0px;
+    }
+  
+    .shop-item-name {
+      font-size: 17px;
+    }
+  
+    .shop-item-img {
+      width: 60%;
+    }
+  
+  
+    /********************** SECTION - CONTACT **********************/
+  
+    .contact {
+      right: 12%;
+    }
+  
+    .contact h3 {
+      font-size: 25px;
+    }
+  
+    .form-background {
+      width: 380px;
+      height: 400px;
+      border-radius: 30px;
+    }
+  
+    .form-container {
+      gap: 5px;
+    }
+  
+    .form-container-input {
+      width: 150%;
+      height: 35px;
+    }
+  
+    .form-container-textarea {
+      width: 150%;
+      height: 120;
+    }
+    
+    .form-container-button {
+      width: 150%;
+      height: 35px;
+    }
+  
+    .form-images-img {
+      height: 70%;
+      left: 70%;
+      transform: rotate(30deg);
+    }
+  
+  
+    /********************** SECTION - FOOTER **********************/
+  
+    footer {
+      margin-top: 0px;
+    }
+  
+    .footer-logo {
+      width: 28%;
+      margin-top: 30px;
+    }
+  
+    .footer-info-instagram {
+      font-size: 40px;
+    }
+  
+    .footer-info {
+      gap: 20px;
+    }
+  
+    .footer-info-text-location, .footer-info-text-copyright {
+      font-size: 14px;
+    }
+  
+    /********************** SECTION - TOASTIFY **********************/
+  
+    .toastify-avatar {
+      width: 120px;
+      height: 120px;
+    }
+  }
+  
+  
+  
+  
+  
+  
+  /**********   480px - 599px   **********/
+  
+  
+  
+  
+  @media (min-width: 480px) and (max-width: 599px) {
+  
+      /********************** NAV BAR **********************/
+  
+      .nav-branding-logo {
+        width: 34%;
+        padding-top: 0px;
+      }
+    
+      /********************** SECTION - CART **********************/
+       
+      .cart-icon {
+        left: 90%;
+      }
+    
+      .cart-icon-container {
+        height: 45px;
+      }
+    
+      .cart-container {
+        width: 55%;
+        top: 11%;
+        left: 43%;
+        overflow-y: scroll;
+        overflow-x: hidden;
+      }
+      
+      .fa-cart-shopping {
+        font-size: 27px;
+      }
+    
+      .cart-icon-number {
+        font-size: 18px;
+      }
+    
+      /* Scrollbar */
+      ::-webkit-scrollbar {
+        width: 10px;
+      }
+    
+      .cart-item-img {
+        width: 20%;
+      }
+    
+      .cart-item-name {
+        font-size: 13px;
+      }
+    
+      .cart-item-price {
+        font-size: 13px;
+      }
+    
+      .cart-item-quantity {
+        width: 30px;
+        font-size: 16px;
+      }
+    
+      .cart-price-text {
+        display: inline-block;
+        font-weight: 900;
+        font-size: 15px;
+      }
+      
+      .cart-price {
+        font-size: 15px;
+      }
+    
+      .cart-buy-button {
+        width: 240px;
+        height: 30px;
+        font-size: 16px;  
+        margin-bottom: 20px;
+      }
+    
+    
+      /********************** SECTION - WELCOME PAGE **********************/
+    
+      /* welcomePage-background */
+    
+      .welcomePage-background .fa-solid {
+        font-size: 24px;
+      }
+    
+      .fa-hippo {
+        left: 80%;
+        top: 45%;
+      }
+  
+      .fa-horse1 {
+        display: none;
+      }
+    
+      .fa-horse2 {
+        top: 70%;
+      }
+    
+      .fa-cloud1 {
+        top: 2%;
+        left: 5%;
+      }
+    
+      .fa-cloud2 {
+        top: 75%;
+        left: 65%;
+      }
+  
+      .fa-moon1 {
+        color: var(--pink-color);
+      }  
+    
+      .fa-moon2 {
+        top: 65%;
+      }  
+    
+      /* welcomePage-info */
+  
+      .welcomePage-info {
+        width: 100%;
+        height: 100%;
+        justify-content: space-evenly;
+        top: 0%;
+        flex-direction: column;
+        text-align: center;
+      }
+    
+      .welcomePage-text {
+        width: 90%;
+        top: 0%;
+        align-self: center;
+      }
+    
+      .welcomePage-text h1 {
+        font-size: 33px;
+      }
+    
+      .welcomePage-text p {
+        font-size: 16px;
+        margin-top: 10px;
+      }
+    
+      .welcomePage-img {
+        position: relative;
+        right: 2%;
+        top: -3%;
+        align-self: center;
+      }
+      
+      .welcomePage-img-circle {
+        width: 240px;
+        height: 240px;
+      }
+      
+      .welcomePage-img-circle-1 {
+        height: 100%;
+        bottom: 0%;
+        right: -2%;
+      }
+      
+      .welcomePage-img-circle-2 {
+        height: 95%;
+        bottom: -2%;
+        right: 18%;
+      }
+      
+    
+      /********************** SECTION - INFO **********************/
+    
+      .info {
+        width: 90%;
+        height: 50vh;
+        margin-top: 80px;
+      }
+    
+      .info-container-background--yellow {
+        bottom: 42%;
+        height: 160px;
+        transform: rotate(-10deg);
+      }
+    
+      .info-container-background--bluelight {
+        bottom: 42%;
+        height: 160px;
+        transform: rotate(10deg);
+      }
+  
+      .info-container {
+        padding: 15px 0;
+      }    
+    
+      .info-container-items .fa-solid {
+        font-size: 20px;
+      }
+    
+      .info-container-items-title {
+        font-size: 12px;
+        padding: 10px 2px;
+      }
+    
+      .info-container-items-text {
+        color: #fff;
+        width: 92%;
+        font-size: 10px;
+      }
+    
+    
+      /********************** SECTION - US **********************/
+    
+      .us {
+        margin: 0 8%;
+        height: 60vh;
+      }
+    
+      .us-info {
+        justify-content: space-between;
+      }
+    
+      .us-img-circle {
+        width: 180px;
+        height: 180px;
+        margin-top: 18px;
+      }
+      
+      .us-img-circle-background {
+        width: 190px;
+        height: 190px;
+      }
+      
+      .us-text {
+        width: 55%;
+        height: 40vh;
+        margin-top: 0px;
+      }
+      
+      .us-text h2 {
+        font-size: 22px;
+      }
+      
+      .us-text p {
+        font-size: 11px;
+      }
+  
+      .us-text-button-cats {
+        width: 100px;
+        height: 27px;
+        font-size: 10px;
+        margin-top: 0px;
+        margin-right: 0px;
+      }
+      
+      .us-text-button {
+        width: 100px;
+        height: 27px;
+        font-size: 10px;
+        margin-top: 0px;
+      }
+      
+      .us-background-circle--yellow {
+        width: 150px;
+        height: 150px;
+      }
+    
+      /********************** SECTION - SHOP **********************/
+    
+      .shop {
+        margin: 20px;
+        padding: 30px;
+        border-radius: 50px;
+      }
+    
+      .shop h2 {
+        font-size: 30px;
+      }
+    
+      .shop-items {
+        grid-template-columns: repeat(2, 1fr);
+        grid-row-gap: 50px;
+        grid-column-gap: 30px;
+        margin: 0px;
+      }
+  
+      .shop-item {
+        border-radius: 40px;
+        padding: 20px 0;
+      }
+    
+      .shop-item-name {
+        font-size: 15px;
+      }
+    
+      .shop-item-img {
+        width: 65%;
+      }
+    
+    
+      /********************** SECTION - CONTACT **********************/
+    
+      .contact {
+        right: 14%;
+        height: 75vh;
+      }
+    
+      .contact h3 {
+        font-size: 22px;
+        margin-bottom: 10px;
+      }
+    
+      .form-background {
+        width: 280px;
+        height: 320px;
+        border-radius: 30px;
+      }
+    
+      .form-container {
+        gap: 5px;
+      }
+    
+      .form-container-input {
+        width: 110%;
+        height: 30px;
+        font-size: 12px;
+      }
+    
+      .form-container-textarea {
+        width: 110%;
+        height: 100;
+        font-size: 12px;
+      }
+      
+      .form-container-button {
+        width: 110%;
+        height: 30px;
+        margin-top: 2px;
+        font-size: 12px;
+      }
+    
+      .form-images-img {
+        height: 65%;
+        left: 72%;
+        transform: rotate(30deg);
+      }
+    
+    
+      /********************** SECTION - FOOTER **********************/
+    
+      footer {
+        margin-top: 0px;
+      }
+    
+      .footer-logo {
+        width: 35%;
+        margin-top: 30px;
+      }
+    
+      .footer-info-instagram {
+        font-size: 35px;
+      }
+    
+      .footer-info {
+        gap: 20px;
+      }
+    
+      .footer-info-text-location, .footer-info-text-copyright {
+        font-size: 12px;
+      }
+  
+    /********************** SECTION - TOASTIFY **********************/
+  
+    .toastify-avatar {
+      width: 120px;
+      height: 120px;
+    }
+  }
+  
+  
+  
+  /**********   320px - 479px   **********/
+  
+  
+  
+  @media (min-width: 320px) and (max-width: 479px) {
+  
+      /********************** NAV BAR **********************/
+  
+      .nav-branding-logo {
+        width: 40%;
+        position: relative;
+        right: 10%;
+        padding-top: 0px;
+      }
+    
+      /********************** SECTION - CART **********************/
+       
+      .cart-icon {
+        left: 85%;
+      }
+    
+      .cart-icon-container {
+        height: 40px;
+      }
+    
+      .cart-container {
+        width: 70%;
+        top: 8%;
+        left: 25%;
+        overflow-y: scroll;
+        overflow-x: hidden;
+      }
+      
+      .fa-cart-shopping {
+        font-size: 24px;
+      }
+    
+      .cart-icon-number {
+        font-size: 15px;
+      }
+    
+      /* Scrollbar */
+      ::-webkit-scrollbar {
+        width: 10px;
+      }
+    
+      .cart-item-img {
+        width: 22%;
+      }
+    
+      .cart-item-name {
+        font-size: 11px;
+      }
+    
+      .cart-item-price {
+        font-size: 11px;
+      }
+    
+      .cart-item-quantity {
+        width: 30px;
+        font-size: 15px;
+      }
+    
+      .cart-price-text {
+        display: inline-block;
+        font-weight: 900;
+        font-size: 14px;
+      }
+      
+      .cart-price {
+        font-size: 14px;
+      }
+    
+      .cart-buy-button {
+        width: 200px;
+        height: 30px;
+        font-size: 16px;  
+        margin-bottom: 20px;
+      }
+    
+    
+      /********************** SECTION - WELCOME PAGE **********************/
+    
+      /* welcomePage-background */
+    
+      .welcomePage-background .fa-solid {
+        font-size: 24px;
+      }
+    
+      .fa-hippo {
+        left: 80%;
+        top: 45%;
+      }
+  
+      .fa-horse1 {
+        display: none;
+      }
+    
+      .fa-horse2 {
+        top: 80%;
+      }
+    
+      .fa-cloud1 {
+        top: 2%;
+        left: 15%;
+      }
+    
+      .fa-cloud2 {
+        top: 75%;
+        left: 65%;
+        display: none;
+      }
+  
+      .fa-moon1 {
+        color: var(--pink-color);
+        left: 70%;
+      }  
+    
+      .fa-moon2 {
+        top: 65%;
+      }  
+    
+      /* welcomePage-info */
+  
+      .welcomePage-info {
+        width: 100%;
+        height: 100%;
+        justify-content: space-evenly;
+        top: 0%;
+        flex-direction: column;
+        text-align: center;
+      }
+    
+      .welcomePage-text {
+        width: 90%;
+        top: 0%;
+        align-self: center;
+      }
+    
+      .welcomePage-text h1 {
+        font-size: 26px;
+        margin-top: 20px;
+      }
+    
+      .welcomePage-text p {
+        font-size: 14px;
+        margin-top: 10px;
+      }
+    
+      .welcomePage-img {
+        position: relative;
+        right: 2%;
+        top: -3%;
+        align-self: center;
+      }
+      
+      .welcomePage-img-circle {
+        width: 200px;
+        height: 200px;
+      }
+      
+      .welcomePage-img-circle-1 {
+        height: 95%;
+        bottom: 0%;
+        right: -2%;
+      }
+      
+      .welcomePage-img-circle-2 {
+        height: 90%;
+        bottom: -2%;
+        right: 17%;
+      }
+      
+    
+      /********************** SECTION - INFO **********************/
+    
+      .info {
+        width: 90%;
+        height: 50vh;
+        margin-top: 50px;
+      }
+    
+      .info-container-background--yellow {
+        bottom: 50%;
+        height: 140px;
+        transform: rotate(-10deg);
+      }
+    
+      .info-container-background--bluelight {
+        bottom: 50%;
+        height: 140px;
+        transform: rotate(10deg);
+      }
+  
+      .info-container {
+        padding: 15px 0;
+      }    
+    
+      .info-container-items .fa-solid {
+        font-size: 15px;
+      }
+    
+      .info-container-items-title {
+        font-size: 10px;
+        padding: 5px 2px;
+      }
+    
+      .info-container-items-text {
+        color: #fff;
+        width: 92%;
+        font-size: 8px;
+      }
+    
+    
+      /********************** SECTION - US **********************/
+    
+      .us {
+        margin: 0 8%;
+        height: 100vh;
+      }
+    
+      .us-info {
+        flex-direction: column;
+        justify-content: space-between;
+      }
+  
+      .us-img {
+        margin: auto;
+      }
+    
+      .us-img-circle {
+        width: 210px;
+        height: 210px;
+        margin-top: 18px;
+      }
+      
+      .us-img-circle-background {
+        width: 220px;
+        height: 220px;
+      }
+      
+      .us-text {
+        width: 90%;
+        height: 40vh;
+        margin-top: 30px;
+      }
+      
+      .us-text h2 {
+        font-size: 22px;
+      }
+      
+      .us-text p {
+        font-size: 11px;
+      }
+  
+      .us-text-button-cats {
+        width: 120px;
+        height: 27px;
+        font-size: 12px;
+        margin: 0 0 2px 0;
+      }
+      
+      .us-text-button {
+        width: 120px;
+        height: 27px;
+        font-size: 12px;
+        margin-top: 0px;
+      }
+      
+      .us-background-circle--yellow {
+        width: 150px;
+        height: 150px;
+      }
+    
+      /********************** SECTION - SHOP **********************/
+    
+      .shop {
+        margin: 20px;
+        padding: 30px;
+        border-radius: 50px;
+      }
+    
+      .shop h2 {
+        font-size: 30px;
+      }
+    
+      .shop-items {
+        grid-template-columns: repeat(1, 1fr);
+        grid-row-gap: 50px;
+        grid-column-gap: 30px;
+        margin: 20px;
+      }
+  
+      .shop-item {
+        border-radius: 40px;
+        padding: 20px 0;
+      }
+    
+      .shop-item-name {
+        font-size: 15px;
+      }
+    
+      .shop-item-img {
+        width: 55%;
+      }
+    
+    
+      /********************** SECTION - CONTACT **********************/
+    
+      .contact {
+        right: 0%;
+        height: 90vh;
+      }
+    
+      .contact h3 {
+        font-size: 22px;
+        margin-bottom: 10px;
+      }
+    
+      .form-background {
+        width: 280px;
+        height: 320px;
+        border-radius: 30px;
+        position: relative;
+        top: 25%;
+      }
+    
+      .form-container {
+        gap: 5px;
+      }
+    
+      .form-container-input {
+        width: 110%;
+        height: 30px;
+        font-size: 12px;
+      }
+    
+      .form-container-textarea {
+        width: 110%;
+        height: 100;
+        font-size: 12px;
+      }
+      
+      .form-container-button {
+        width: 110%;
+        height: 30px;
+        margin-top: 2px;
+        font-size: 12px;
+      }
+    
+      .form-images-img {
+        top: -10%;
+        height: 50%;
+        left: 50%;
+        transform: rotate(10deg);
+      }
+    
+    
+      /********************** SECTION - FOOTER **********************/
+    
+      footer {
+        margin-top: 0px;
+      }
+    
+      .footer-logo {
+        width: 30%;
+        margin-top: 45px;
+      }
+    
+      .footer-info-instagram {
+        font-size: 25px;
+      }
+    
+      .footer-info {
+        gap: 5px;
+        flex-direction: column;
+      }
+    
+      .footer-info-text-location, .footer-info-text-copyright {
+        font-size: 10px;
+      }
+  
+  
+    /********************** SECTION - TOASTIFY **********************/
+  
+      .toastify-avatar {
+        width: 100px;
+        height: 100px;
+      }
+  }
